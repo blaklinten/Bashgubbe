@@ -26,6 +26,20 @@ print_deck() {
   printf '\n'
 }
 
+return_card() {
+  DECK+=("$1")
+}
+
+draw_card() {
+  if [[ ${#DECK[@]} -eq 0 ]]; then
+    log "Deck is empty"
+    return 1
+  fi
+
+  CARD=${DECK[0]}
+  DECK=("${DECK[@]:1}")
+}
+
 shuffle() {
   if [[ ${#DECK[@]} -eq 0 ]]; then
     log "Deck is empty"
