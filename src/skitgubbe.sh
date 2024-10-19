@@ -2,14 +2,12 @@
 
 source ../utils/logging.sh
 source ./deck.sh
+source ./player_state.sh
 
 
 restore_deck
-print_deck
 shuffle
-print_deck
-draw_card
-log "I got card: [$CARD]"
-print_deck
-return_card "$CARD"
+init_player_state
+print_player_one_state
+print_player_two_state
 print_deck
