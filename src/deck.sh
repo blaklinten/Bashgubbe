@@ -11,6 +11,7 @@ restore_deck() {
 }
 
 print_deck() {
+  log "Deck contains:"
   if [[ ${#DECK[@]} -eq 0 ]]; then
     log "Deck is empty"
     return 1
