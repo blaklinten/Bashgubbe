@@ -1,0 +1,26 @@
+#!/bin/env bash
+
+clean_up() {
+  unset DECK
+  unset ORIGINAL_DECK
+  unset TMP_DECK
+  unset CARD
+  unset PLAYER_ONE_HAND
+  unset PLAYER_ONE_HAND
+  unset PLAYER_ONE_HAND
+  unset PLAYER_ONE_OPEN
+  unset PLAYER_ONE_OPEN
+  unset PLAYER_ONE_OPEN
+  unset PLAYER_ONE_HIDDEN
+  unset PLAYER_ONE_HIDDEN
+  unset PLAYER_ONE_HIDDEN
+  unset PLAYER_TWO_HAND
+  unset PLAYER_TWO_HAND
+  unset PLAYER_TWO_HAND
+  unset PLAYER_TWO_OPEN
+  unset PLAYER_TWO_OPEN
+  unset PLAYER_TWO_OPEN
+  unset PLAYER_TWO_HIDDEN
+  unset PLAYER_TWO_HIDDEN
+  unset PLAYER_TWO_HIDDEN
+}
