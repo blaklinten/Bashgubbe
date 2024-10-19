@@ -16,8 +16,8 @@ print_deck() {
     return 1
   fi
 
-  for i in $(seq 0 51); do
-    printf '%s -> %s\t' "$i" "${DECK[i]}"
+  for i in $(seq 1 ${#DECK[@]}); do
+    printf '%s -> %s\t' "$i" "${DECK[$((i - 1))]}"
     if [[ $((i % 3 )) -eq 0 ]]; then 
       printf '\n'
     fi
