@@ -23,4 +23,7 @@ clean_up() {
   unset PLAYER_TWO_HIDDEN
   unset PLAYER_TWO_HIDDEN
   unset PLAYER_TWO_HIDDEN
+  unset WINNER
+  unset PLAYER_TURN
+  unset PHASE
 }
