@@ -1,15 +1,21 @@
 #!/bin/env bash
 
-source ../utils/logging.sh
 source ../utils/clean_up.sh
+clean_up
+
 source ./deck.sh
 source ./player_state.sh
-
+source ./game.sh
+source ../utils/logging.sh
 
 restore_deck
 shuffle
 init_player_state
-print_player_one_state
-print_player_two_state
-print_deck
+start_game
+while [ -z "$WINNER" ]; do
+  next_turn
+done
+
+print_winner "$WINNER"
+
 clean_up
